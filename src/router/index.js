@@ -28,6 +28,14 @@ var router = new Router({
         title: 'ListDemo02'
       },
       component: () => import('@/views/list-demo-02/index')
+    },
+    {
+      path: '/head/demo-01',
+      name: 'HeadDemo01',
+      meta: {
+        title: 'ListDemo02'
+      },
+      component: () => import('@/views/head-demo-01/index')
     }
   ]
 })

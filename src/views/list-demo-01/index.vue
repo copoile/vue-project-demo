@@ -73,6 +73,7 @@ export default {
       transition: transform .3s;
       &:hover {
         transform: translateY(-10px);
+        cursor: pointer;
         .name {
           color: #1DA6BA;
         }
