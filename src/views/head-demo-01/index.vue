@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-      <div class="head" :class="{'head_hover':active!=''}">
+      <div class="head" :class="{'head_hover':show!=''}">
         <div class="head_t" @mouseleave="mouseleave">
           <div class="head_inner">
             <ul>
