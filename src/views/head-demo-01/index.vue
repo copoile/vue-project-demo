@@ -268,6 +268,7 @@ export default {
             transform: perspective(1px) translateZ(0);
             .line {
               display: none;
+              transition: width .3s;
             }
             .active-line {
               display: block;
@@ -277,6 +278,7 @@ export default {
               color: #ec4828;
               bottom: 0;
               background: #ec4828;
+              transition: width .3s;
             }
             span {
               display: block;
