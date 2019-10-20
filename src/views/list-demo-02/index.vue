@@ -107,12 +107,7 @@ export default {
       }
       .img-swrapper {
         width: 100%;
-        height: 193px;
         position: relative;
-        img {
-          width: 100%;
-          height: 100%;
-        }
         .item-mask {
           position: absolute;
           width: 100%;
