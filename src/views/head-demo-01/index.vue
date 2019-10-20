@@ -1,6 +1,9 @@
 <template>
   <div class="container">
       <div class="head" :class="{'head_hover':show!=''}">
+        <div class="logo">
+          <a href="#"></a>
+        </div>
         <div class="head_t" @mouseleave="mouseleave">
           <div class="head_inner">
             <ul>
@@ -237,6 +240,22 @@ export default {
     background: url(../../assets/images/image_008.png);
     background-position: center 0px;
     background-repeat: repeat;
+    .logo {
+      position: absolute;
+      left: 10%;
+      top: 20px;
+      width: 217px;
+      height: 126px;
+      z-index: 3;
+      // 雪碧图
+      background-image: url(../../assets/images/image_010.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      a {
+        display: block;
+        height: 100%;
+      }
+    }
     .head_inner {
       width: 1440px;
       margin: 0 auto;
