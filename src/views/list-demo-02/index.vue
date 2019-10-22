@@ -2,7 +2,7 @@
   <div class="container">
     <div class="list-container">
       <div class="item" v-for="(item, index) in list" :key="index">
-        <div class="img-swrapper">
+        <div class="img-wrap">
           <img :src="item.cover" />
           <div class="item-mask">
             <div class="inner-container">
@@ -91,7 +91,7 @@ export default {
       margin-bottom: 20px;
       display: inline-block;
       margin-left: 10px;
-      transition: transform 0.3s;
+      transition: transform .4s;
       &:hover {
         transform: translateY(-10px);
         cursor: pointer;
@@ -99,13 +99,13 @@ export default {
           color: #1da6ba;
         }
 
-        .img-swrapper {
+        .img-wrap {
           .item-mask {
             opacity: 1;
           }
         }
       }
-      .img-swrapper {
+      .img-wrap {
         width: 100%;
         position: relative;
         .item-mask {

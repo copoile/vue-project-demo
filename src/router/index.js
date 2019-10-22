@@ -30,6 +30,14 @@ var router = new Router({
       component: () => import('@/views/list-demo-02/index')
     },
     {
+      path: '/list/demo-03',
+      name: 'ListDemo03',
+      meta: {
+        title: 'ListDemo03'
+      },
+      component: () => import('@/views/list-demo-03/index')
+    },
+    {
       path: '/head/demo-01',
       name: 'HeadDemo01',
       meta: {

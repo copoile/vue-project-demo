@@ -2,7 +2,7 @@
   <div class="container">
     <div class="list-container">
       <div class="item" v-for="(item,index) in list" :key="index">
-        <div class="img-swrapper">
+        <div class="img-wrap">
           <img :src="item.cover"/>
         </div>
         <div class="name">{{ item.name }}</div>
@@ -70,7 +70,7 @@ export default {
       margin-bottom: 20px;
       display: inline-block;
       margin-left: 10px;
-      transition: transform .3s;
+      transition: transform .4s;
       &:hover {
         transform: translateY(-10px);
         cursor: pointer;
@@ -78,7 +78,7 @@ export default {
           color: #1DA6BA;
         }
       }
-      .img-swrapper {
+      .img-wrap {
         width: 100%;
       }
       .name {

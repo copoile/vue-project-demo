@@ -37,6 +37,7 @@ export default {
       active: 'color:#ec4828',
       show: '',
       activeIndex: -1,
+      opacity: 0,
       items: [
         {
           name: '官网首页',
@@ -284,20 +285,19 @@ export default {
             float: left;
             overflow: hidden;
             position: relative;
-            transform: perspective(1px) translateZ(0);
             .line {
-              display: none;
-              transition: width .3s;
+              height: 5px;
+              width: 0px;
+              transition: width 0.5s;
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              background: #ec4828;
+              color: #ec4828;
+              transform: translateX(-50%);
             }
             .active-line {
-              display: block;
-              position: absolute;
               width: 100%;
-              height: 5px;
-              color: #ec4828;
-              bottom: 0;
-              background: #ec4828;
-              transition: width .3s;
             }
             span {
               display: block;
