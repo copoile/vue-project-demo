@@ -38,6 +38,22 @@ var router = new Router({
       component: () => import('@/views/list-demo-03/index')
     },
     {
+      path: '/list/demo-04',
+      name: 'ListDemo04',
+      meta: {
+        title: 'ListDemo04'
+      },
+      component: () => import('@/views/list-demo-04/index')
+    },
+    {
+      path: '/list/demo-05',
+      name: 'ListDemo05',
+      meta: {
+        title: 'ListDemo04'
+      },
+      component: () => import('@/views/list-demo-05/index')
+    },
+    {
       path: '/head/demo-01',
       name: 'HeadDemo01',
       meta: {
